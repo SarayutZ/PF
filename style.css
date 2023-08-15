@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@300;400&display=swap");
+body {
+  font-family: "Noto Serif Thai", serif;
+}
+body {
+  font-family: "Noto Serif Thai", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* background-image: url('/images/ดีไซน์ที่ยังไม่ได้ตั้งชื่อ.png'); */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.page-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 92vh; เปลี่ยนจาก 100% เป็น 100vh */
+  z-index: 1;
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.centered-container h2 {
+  font-size: 64px;
+}
+
+.subtext {
+  text-align: center;
+  margin-top: 10px;
+  animation: slideUp 1s ease-in-out 0.5s forwards;
+}
+
+.profile-picture img {
+  height: 186px;
+  width: 281px;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.subtext,
+.centered-container {
+  text-align: center;
+  margin-top: 10px;
+  animation: slideUp 1s ease-in-out 0.5s forwards;
+}
+.profile-picture img {
+  height: 286px;
+  width: 281px;
+}
+/* CSS */
+.menu h2 {
+  margin-right: 20px;
+  font-size: 24px;
+  position: relative; /* เพื่อให้สามารถใช้ `::after` ได้ */
+  display: inline-block;
+  cursor: pointer;
+}
+.main h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.main{
+  margin-left: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between; /* ใช้ space-between แทน justify-content-evenly */
+  align-items: center; /* จัดตำแหน่งแนวตั้งกลาง */
+}
+.menu h2::after {
+  content: ""; /* เพิ่มเนื้อหาสำหรับสร้างเส้นขีด */
+  position: absolute;
+  bottom: -3px; /* ระยะห่างจากข้อความด้านล่าง */
+  left: 0;
+  width: 100%;
+  height: 2px; /* ขนาดเส้นขีด */
+  background-color: #000; /* สีเส้นขีด */
+  opacity: 0; /* เริ่มต้นซ่อนเส้นขีด */
+  transition: opacity 0.3s ease-in-out; /* ให้การเปลี่ยนแปลงค่า opacity เนื่องจาก hover เป็นอย่างน้อย 0.3 วินาที */
+}
+
+.menu h2:hover::after {
+  opacity: 1; /* เมื่อ hover ก็จะแสดงเส้นขีด */
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.image-div2 {
+  margin-top: 50px;
+}
+.image-div2 img {
+
+  width: 100%;
+  /* height: 940px; */
+  
+}
+.image-div2 img:hover  {
+	-webkit-filter: grayscale(1000);
+	filter: grayscale(11110);
+}
+
+
+.image-div2 h3{
+ font-size: 54px;
+}
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.myskill{
+  margin-top: 50px;
+}
+.myskill h3{
+  font-size: 64px;
+}
+.about-me{
+  margin-top: 50px;
+}
+.about-me h3{
+  font-size: 64px;
+}
+.skill-info{
+  padding: 50px;
+  
+}
+
+.skill-info i,.tool i{
+  font-size: 80px;
+
+}
+.skill-info p,.tool p{
+  font-size: 28px;
+}
+.skill1,.skill3,.skill2,.skill4,.skill5,.skill6{
+  
+  margin-right: 100px;
+}
+.skill3{
+  margin-left: 120px;
+}
+.head-skill{
+  padding: 2px;
+  
+  background-color: #000;
+  width: 20%;
+  justify-content: center;
+
+}
+.skill{
+  border-bottom: black 1px solid ;
+}
+
+.head-skill h3{
+  font-size: 28px;
+  color: white;
+}
