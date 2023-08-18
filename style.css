@@ -268,18 +268,11 @@ body {
   
 }
 
-.card img{
-  width: 150px;
-  display: flex;
- margin-left: 70px;
- margin-bottom: 20px;
- position: relative;
- top: -20px;
-}
+
 
 #watch{
  position: relative;
- top: 20px;
+height: 250px;
 }
 
 
