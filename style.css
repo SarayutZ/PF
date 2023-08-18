@@ -223,3 +223,13 @@ body {
 #target-skill{
   scroll-margin-top: 5px; /* ปรับตามความต้องการ */
 }
+.box3{
+margin: 100px;
+}
+.card{
+  margin-left: 50px;
+}
+.brand-images img{
+  max-width: 70%;
+  height: auto;
+}
